@@ -37,6 +37,11 @@ html,body{
     overflow: hidden;
 }
 
+.button:hover{
+    border: 5px solid black;
+    opacity: 0.7;
+}
+
 .button img{
     height: 100%;
     width: 100%;
@@ -51,4 +56,25 @@ html,body{
 #scissor img{
     background-image: url("https://media.istockphoto.com/id/1489778746/vector/victory-hand-vector-icon-on-a-white-background-peace-hand-emoji-illustration-isolated.jpg?s=612x612&w=0&k=20&c=5Q0MxFpZCP9Q_-xslb9myx6pgRKgK6hRmvK-KIy-V-s=");
     background-size: cover;
+}
+
+.score{
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(245, 1, 229);
+}
+
+.innerScore{
+    text-align: center;
+    font-size: larger;
+}
+
+.result{
+    height: 5rem;
+    background-color: chartreuse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
