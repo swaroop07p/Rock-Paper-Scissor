@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    border:border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.heading{
+    background-color: darkred;
+    height: 5rem;
+    color: cyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    height: 15rem;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.button{
+    height: 10rem;
+    width: 10rem;
+    background-color: blueviolet;
+    margin: 3rem;
+    border-radius: 50%;
+    border: 5px double rgb(255, 0, 0);
+    overflow: hidden;
+}
+
+.button img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#paper img{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpAAZf76P0Dk3_ViGOvt2alufsWIdRBP_fKg&s");
+    background-size: cover;
+}
+
+#scissor img{
+    background-image: url("https://media.istockphoto.com/id/1489778746/vector/victory-hand-vector-icon-on-a-white-background-peace-hand-emoji-illustration-isolated.jpg?s=612x612&w=0&k=20&c=5Q0MxFpZCP9Q_-xslb9myx6pgRKgK6hRmvK-KIy-V-s=");
+    background-size: cover;
+}
