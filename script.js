@@ -8,46 +8,68 @@ let playerPoint=0;
 let computerPoint=0;
 
 let button=document.querySelectorAll(".button");
+let box=document.getElementById("box");
+let winner=document.getElementById("winner");
+let play_again=document.getElementById("play-again");
+
+function Game(val,comp){
+    if (val==='rock' && comp==='paper'){
+        computerPoint++;
+        point2.innerHTML=computerPoint;
+        res.innerHTML="COMPUTER WON";
+        }
+    else if (val==='rock' && comp==='scissor'){
+        playerPoint++;
+        point1.innerHTML=playerPoint;
+        res.innerHTML="YOU WON";
+    } 
+    else if (val==='paper' && comp==='rock'){
+        playerPoint++;
+        point1.innerHTML=playerPoint;
+        res.innerHTML="YOU WON";
+    } 
+    else if (val==='paper' && comp==='scissor'){
+        computerPoint++;
+        point2.innerHTML=computerPoint;
+        res.innerHTML="COMPUTER WON";
+    }
+    else if (val==='scissor' && comp==='rock'){
+        computerPoint++;
+        point2.innerHTML=computerPoint;
+        res.innerHTML="COMPUTER WON";
+    } 
+    else if (val==='scissor' && comp==='paper'){
+        playerPoint++;
+        point1.innerHTML=playerPoint;
+        res.innerHTML="YOU WON";
+    } 
+    else{
+        res.innerHTML="DRAW";
+    }
+
+}
 
 button.forEach((choice)=>{
     choice.addEventListener("click",()=>{
         let idx=Math.floor(Math.random()*list.length);
         let comp=list[idx];
+        console.log(comp);
         const val=choice.getAttribute("id");
-        console.log("Choice was clicked",val,comp);
         
-        if (val==='rock' && comp==='paper'){
-            computerPoint++;
-            point2.innerHTML=computerPoint;
-            res.innerHTML="COMPUTER WON";
+        Game(val,comp);
+        if (playerPoint>computerPoint+3){
+            box.style.visibility="visible";
+            winner.innerHTML="YOU WON THE MATCH";
+            play_again.addEventListener("click",()=>{
+                reset();
+            })
         }
-        else if (val==='rock' && comp==='scissor'){
-            playerPoint++;
-            point1.innerHTML=playerPoint;
-            res.innerHTML="YOU WON";
-        } 
-        else if (val==='paper' && comp==='rock'){
-            playerPoint++;
-            point1.innerHTML=playerPoint;
-            res.innerHTML="YOU WON";
-        } 
-        else if (val==='paper' && comp==='scissor'){
-            computerPoint++;
-            point2.innerHTML=computerPoint;
-            res.innerHTML="COMPUTER WON";
-        } 
-        else if (val==='scissor' && comp==='rock'){
-            computerPoint++;
-            point2.innerHTML=computerPoint;
-            res.innerHTML="COMPUTER WON";
-        } 
-        else if (val==='scissor' && comp==='paper'){
-            playerPoint++;
-            point1.innerHTML=playerPoint;
-            res.innerHTML="YOU WON";
-        } 
-        else{
-            res.innerHTML="DRAW";
+        else if(computerPoint>playerPoint+3){
+            box.style.visibility="visible";
+            winner.innerHTML="COMPUTER WON THE MATCH";
+            play_again.addEventListener("click",()=>{
+                reset();
+            })
         }
     })
 });
@@ -58,4 +80,5 @@ function reset(){
     res.innerHTML="PLAY THE GAME";
     playerPoint=0;
     computerPoint=0;
+    box.style.visibility="hidden";
 }
