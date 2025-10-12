@@ -7,12 +7,29 @@
 html,body{
     height: 100%;
     width: 100%;
+    background-color: hotpink;
+}
+
+#outer-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .heading{
-    background-color: darkred;
+    background-color: rgb(48, 47, 47);
     height: 5rem;
-    color: cyan;
+    width: 25rem;
+    margin-top: 0.5rem;
+    border-radius: 9px;
+    border: 5px solid gray;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#outer-container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,11 +37,14 @@ html,body{
 
 .container{
     height: 15rem;
-    background-color: aquamarine;
+    width: 60rem;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    border: 7px solid blue;
+    background-color:rgb(5, 241, 254);
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 .button{
@@ -33,7 +53,7 @@ html,body{
     background-color: blueviolet;
     margin: 3rem;
     border-radius: 50%;
-    border: 5px double rgb(255, 0, 0);
+    border: 5px solid rgb(255, 0, 0);
     overflow: hidden;
 }
 
@@ -63,18 +83,66 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgb(245, 1, 229);
 }
 
 .innerScore{
+    height: 5rem;
+    width: 13rem;
+    border-radius: 5px;
+    border: 5px solid rgb(65, 1, 65);
+    margin-top: 2rem;
+    color: gold;
     text-align: center;
-    font-size: larger;
+    font-size: x-large;
+    background-color: darkmagenta;
 }
 
 .result{
     height: 5rem;
+    width: 20rem;
     background-color: chartreuse;
+    border: 6px solid rgb(19, 166, 26);
+    display: flex;
+    color:darkblue;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+#result-tag{
+    text-align: center;
+    margin-top: 1.2rem;
+}
+
+#result-container{
     display: flex;
     align-items: center;
     justify-content: center;
+    
+}
+
+#reset{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#resetting{
+    height: 4rem;
+    width: 8rem;
+    background-color:rgba(239, 32, 32, 0.633);
+    color: yellow;
+    border-radius: 10px;
+    border: 5px solid red;
+    font-size: larger;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#resetting:hover{
+    border: 5px solid black;
+    font-size: x-large;
 }
