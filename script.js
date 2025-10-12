@@ -17,9 +17,9 @@ button.forEach((choice)=>{
         console.log("Choice was clicked",val,comp);
         
         if (val==='rock' && comp==='paper'){
-        computerPoint++;
-        point2.innerHTML=computerPoint;
-        res.innerHTML="COMPUTER WON";
+            computerPoint++;
+            point2.innerHTML=computerPoint;
+            res.innerHTML="COMPUTER WON";
         }
         else if (val==='rock' && comp==='scissor'){
             playerPoint++;
