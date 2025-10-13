@@ -16,32 +16,32 @@ function Game(val,comp){
     if (val==='rock' && comp==='paper'){
         computerPoint++;
         point2.innerHTML=computerPoint;
-        res.innerHTML="COMPUTER WON";
+        res.innerHTML=`Computer's ${comp} Beats Your ${val}`;
         }
     else if (val==='rock' && comp==='scissor'){
         playerPoint++;
         point1.innerHTML=playerPoint;
-        res.innerHTML="YOU WON";
+        res.innerHTML=`Your ${val} Beats Computer's ${comp}`;
     } 
     else if (val==='paper' && comp==='rock'){
         playerPoint++;
         point1.innerHTML=playerPoint;
-        res.innerHTML="YOU WON";
+        res.innerHTML=`Your ${val} Beats Computer's ${comp}`;
     } 
     else if (val==='paper' && comp==='scissor'){
         computerPoint++;
         point2.innerHTML=computerPoint;
-        res.innerHTML="COMPUTER WON";
+        res.innerHTML=`Computer's ${comp} Beats Your ${val}`;
     }
     else if (val==='scissor' && comp==='rock'){
         computerPoint++;
         point2.innerHTML=computerPoint;
-        res.innerHTML="COMPUTER WON";
+        res.innerHTML=`Computer's ${comp} Beats Your ${val}`;
     } 
     else if (val==='scissor' && comp==='paper'){
         playerPoint++;
         point1.innerHTML=playerPoint;
-        res.innerHTML="YOU WON";
+        res.innerHTML=`Your ${val} Beats Computer's ${comp}`;
     } 
     else{
         res.innerHTML="DRAW";
