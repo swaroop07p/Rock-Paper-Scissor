@@ -1,5 +1,12 @@
 list =['rock','paper','scissor'];
 
+let  star1=document.getElementById("star1");
+let  star2=document.getElementById("star2");
+let  star3=document.getElementById("star3");
+let  star4=document.getElementById("star4");
+let  star5=document.getElementById("star5");
+let  star=document.querySelectorAll(".star");
+
 let point1=document.getElementById("p-p");
 let point2=document.getElementById("c-p");
 let res=document.getElementById("result-tag");
@@ -73,6 +80,74 @@ button.forEach((choice)=>{
         }
     })
 });
+
+
+let stars=[star1,star2,star3,star4,star5];
+
+function starEnter(n){
+    for (let i=0;i<n;i++){
+        star[i].style.color="Yellow";
+    }
+}
+
+function starLeave(n){
+    for (let i=0;i<n;i++){
+        star[i].style.color="rgb(73, 71, 71)";
+    }
+}
+
+function starClick(n) {
+  for (let i = 0; i < stars.length; i++) {
+    stars[i].style.color = i < n ? "Yellow" : "rgb(73, 71, 71)";
+  }
+}
+
+for (let i = 0; i < stars.length; i++) {
+  stars[i].addEventListener("mouseenter", () => {
+    starEnter(i + 1);
+  });
+
+  stars[i].addEventListener("mouseleave", () => {
+    starLeave(i + 1);
+  });
+
+}
+
+
+// star1.addEventListener("mouseenter",()=>{
+//     starEnter(1);
+// })
+// star1.addEventListener("mouseleave",()=>{
+//     starLeave(1);
+// })
+
+// star2.addEventListener("mouseenter",()=>{
+//     starEnter(2);
+// })
+// star2.addEventListener("mouseleave",()=>{
+//     starLeave(2);
+// })
+
+// star3.addEventListener("mouseenter",()=>{
+//     starEnter(3);
+// })
+// star3.addEventListener("mouseleave",()=>{
+//     starLeave(3);
+// })
+
+// star4.addEventListener("mouseenter",()=>{
+//     starEnter(4);
+// })
+// star4.addEventListener("mouseleave",()=>{
+//     starLeave(4);
+// })
+
+// star5.addEventListener("mouseenter",()=>{
+//     starEnter(5);
+// })
+// star5.addEventListener("mouseleave",()=>{
+//     starLeave(5);
+// })
 
 function reset(){
     point1.innerHTML=0;
