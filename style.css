@@ -20,14 +20,6 @@ span{
     justify-content: center;
 }
 
-/* .outer-box{ */
-    /* height: 100%;
-    width: 100%; */
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-/* } */
-
 #box{
     height: 500px;
     width: 500px;
@@ -81,12 +73,6 @@ span{
     background-color: rgba(0, 0, 255, 0.71);
 }
 
-/* #outer-heading{ */
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-/* } */
-
 .heading{
     background-color: rgb(48, 47, 47);
     height: 5rem;
@@ -97,12 +83,6 @@ span{
     color: rgb(255, 255, 255);
     box-shadow: 5px 5px 8px black;
 }
-
-/* #outer-container{ */
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-/* } */
 
 .container{
     height: 15rem;
@@ -182,12 +162,6 @@ span{
     text-align: center;
     margin-top: 1.2rem;
 }
-
-/* #result-container{ */
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-/* } */
 
 #reset{
     height: 5rem;

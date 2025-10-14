@@ -81,7 +81,6 @@ button.forEach((choice)=>{
     })
 });
 
-
 let stars=[star1,star2,star3,star4,star5];
 
 function starEnter(n){
@@ -112,42 +111,6 @@ for (let i = 0; i < stars.length; i++) {
   });
 
 }
-
-
-// star1.addEventListener("mouseenter",()=>{
-//     starEnter(1);
-// })
-// star1.addEventListener("mouseleave",()=>{
-//     starLeave(1);
-// })
-
-// star2.addEventListener("mouseenter",()=>{
-//     starEnter(2);
-// })
-// star2.addEventListener("mouseleave",()=>{
-//     starLeave(2);
-// })
-
-// star3.addEventListener("mouseenter",()=>{
-//     starEnter(3);
-// })
-// star3.addEventListener("mouseleave",()=>{
-//     starLeave(3);
-// })
-
-// star4.addEventListener("mouseenter",()=>{
-//     starEnter(4);
-// })
-// star4.addEventListener("mouseleave",()=>{
-//     starLeave(4);
-// })
-
-// star5.addEventListener("mouseenter",()=>{
-//     starEnter(5);
-// })
-// star5.addEventListener("mouseleave",()=>{
-//     starLeave(5);
-// })
 
 function reset(){
     point1.innerHTML=0;
