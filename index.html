@@ -1,67 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ROCK PAPER SCISSOR GAME</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
 
-<body>
-    <div class="outer-box center">
-        <div id="box" class="center">
-            <div id="winner" class="center">
-                <h3></h3>
-            </div>
-            <div id="stars" class="center">
-                <span id="star1" class="fa fa-star checked star"></span>
-                <span id="star2" class="fa fa-star checked star"></span>
-                <span id="star3" class="fa fa-star checked star"></span>
-                <span id="star4" class="fa fa-star star"></span>
-                <span id="star5" class="fa fa-star star"></span>
-            </div>
-            <button id="play-again">PLAY AGAIN</button>
-        </div>
-    </div>
-    <div id="outer-heading" class="center">
-        <div class="heading center">
-            <h1 id="heading-tag">Rock Paper Scissor</h1>
-        </div>
-    </div>
-    <div id="outer-container" class="center">
-        <div class="container center">
-            <div class="button" id="rock">
-                <img class="image" src="Images\Rock.png" alt="">
-            </div>
-            <div class="button" id="paper">
-                <img class="image" src="Images\Paper.png" alt="">
-            </div>
-            <div class="button" id="scissor">
-                <img class="image" src="Images\Scissor.png" alt="">
+    <body>
+        <div class="outer-box center">
+            <div id="box" class="center">
+                <div id="winner" class="center">
+                    <h3></h3>
+                </div>
+                <div id="stars" class="center">
+                    <span id="star1" class="fa fa-star checked star"></span>
+                    <span id="star2" class="fa fa-star checked star"></span>
+                    <span id="star3" class="fa fa-star checked star"></span>
+                    <span id="star4" class="fa fa-star star"></span>
+                    <span id="star5" class="fa fa-star star"></span>
+                </div>
+                <button id="play-again">PLAY AGAIN</button>
             </div>
         </div>
-    </div>
-    <div class="score">
-        <div class="innerScore">
-            <h2 id="player">Player</h2>
-            <h2 id="p-p">0</h2>
+        <div id="outer-heading" class="center">
+            <div class="heading center">
+                <h1 id="heading-tag">Rock Paper Scissor</h1>
+            </div>
         </div>
-        <div class="innerScore">
-            <h2 id="computer">Computer</h2>
-            <h2 id="c-p">0</h2>
+        <div id="outer-container" class="center">
+            <div class="container center">
+                <div class="button" id="rock">
+                    <img class="image" src="Images\Rock.png" alt="">
+                </div>
+                <div class="button" id="paper">
+                    <img class="image" src="Images\Paper.png" alt="">
+                </div>
+                <div class="button" id="scissor">
+                    <img class="image" src="Images\Scissor.png" alt="">
+                </div>
+            </div>
         </div>
-    </div>
-    <div id="result-container" class="center">
-        <div class="result center">
-            <h1 id="result-tag">PLAY YOUR MOVE</h1>
+        <div class="score">
+            <div class="innerScore">
+                <h2 id="player">Player</h2>
+                <h2 id="p-p">0</h2>
+            </div>
+            <div class="innerScore">
+                <h2 id="computer">Computer</h2>
+                <h2 id="c-p">0</h2>
+            </div>
         </div>
-    </div>
-    <div id="reset" class="center">
-        <button id="resetting" onclick="reset()">RESET</button>
-    </div>
-    <script src="script.js"></script>
-</body>
+        <div id="result-container" class="center">
+            <div class="result center">
+                <h1 id="result-tag">PLAY YOUR MOVE</h1>
+            </div>
+        </div>
+        <div id="reset" class="center">
+            <button id="resetting" onclick="reset()">RESET</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
 
 </html>
