@@ -1,2 +1,5 @@
 # Rock-Paper-Scissor
-A Number Guessing Game
+Rock paper scissor game
+Author: Swaroop 
+Languages used: HTML CSS JS
+
